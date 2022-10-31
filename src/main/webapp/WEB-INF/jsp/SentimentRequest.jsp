@@ -10,8 +10,8 @@
 <body>
 <h1>CognitiveServiceを使うサイト</h1>
 
-<h3>調べたい感情の文字列を教えてください</h3>
-<form method="POST" action="./result">
+<h3>調べたい文字列を教えてください。</h3>
+<form method="POST" action="./SentimentResult">
 <input type="TEXT" name="string" />
 <input type="submit" />
 </form>

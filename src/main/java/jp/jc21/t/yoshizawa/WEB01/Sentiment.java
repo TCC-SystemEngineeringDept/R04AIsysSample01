@@ -20,7 +20,7 @@ public class Sentiment {
 		}
 	}
 
-	static Sentiments getSentiments(String s) throws IOException, URISyntaxException, InterruptedException {
+	static Sentiments getSentiments(String string) throws IOException, URISyntaxException, InterruptedException {
 		Gson gson = new Gson();
 
 		String url = "https://r04jk3a03-text.cognitiveservices.azure.com//" + "text/analytics/v3.0/Sentiment";
@@ -29,7 +29,7 @@ public class Sentiment {
 
 		ADocs doc = new ADocs();
 		doc.id = "1";
-		doc.text = s;
+		doc.text = string;
 
 		ASource src = new ASource();
 		src.documents = new ADocs[1];
